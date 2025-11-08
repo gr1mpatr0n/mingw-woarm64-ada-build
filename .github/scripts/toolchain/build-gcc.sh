@@ -67,6 +67,7 @@ if [[ "$RUN_CONFIG" = 1 ]] || [[ ! -f "$GCC_BUILD_PATH/Makefile" ]]; then
                     --enable-threads=win32 \
                     --enable-graphite \
                     --enable-fully-dynamic-string \
+                    --enable-libada \
                     --enable-libstdcxx-filesystem-ts \
                     --enable-libstdcxx-time \
                     --enable-cloog-backend=isl \
@@ -109,7 +110,7 @@ if [[ "$RUN_CONFIG" = 1 ]] || [[ ! -f "$GCC_BUILD_PATH/Makefile" ]]; then
             --host=$HOST \
             --target=$TARGET \
             --enable-static \
-            --enable-languages=c,c++,d,fortran,lto,m2,objc,obj-c++ \
+            --enable-languages=ada,c,c++,d,fortran,lto,m2,objc,obj-c++ \
             --disable-bootstrap \
             --disable-multilib \
             --with-gnu-as \
